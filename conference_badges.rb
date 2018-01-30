@@ -16,6 +16,6 @@ end
 
 def conference_badges(names)
   assigns = []
-  names.each_with_index{|name, number| names << "Hello"
-    
+  names.each_with_index{|name, number| assigns << room_maker(name, number)}
+  assigns
 end
