@@ -19,3 +19,9 @@ def assign_rooms(names)
   names.each_with_index{|name, number| assigns << room_maker(name, number)}
   assigns
 end
+
+def printer
+  batch_badge_creator.each{|badge| puts badge}
+  assign_rooms.each{|room| puts room}
+
+end
