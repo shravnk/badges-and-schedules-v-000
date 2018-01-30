@@ -14,7 +14,7 @@ def room_maker(name, number)
   "Hello, #{name}! You'll be assigned to room #{number}!"
 end
 
-def conference_badges(names)
+def assign_rooms(names)
   assigns = []
   names.each_with_index{|name, number| assigns << room_maker(name, number)}
   assigns
